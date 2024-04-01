@@ -37,14 +37,15 @@ function cambiaIndirizzo(){
 }
 
 function cambiaCss() {
-    let elementiAmazon = document.querySelectorAll(".amazon a");
+    let elementiAmazon = document.querySelectorAll(".amazon a")
+
     for (let i = 0; i < elementiAmazon.length; i++) {
-        elementiAmazon[i].classList.add("color");
+        elementiAmazon[i].classList.add("color")
     }
 }
 
 function visibileInvisibile(){
-    let immagini = document.querySelectorAll(".immagini img");
+    let immagini = document.querySelectorAll(".immagini img")
     
     for (let i = 0; i < immagini.length; i++) {
         immagini[i].classList.toggle("invisibileVisibile")
@@ -57,8 +58,8 @@ function coloreRandom(){
     let colori = ['#FF5733', '#33FF57', '#5733FF', '#FF33F5', '#33E5FF', '#D933FF', '#FF5733', '#33FF57', '#5733FF', '#FF33F5', '#33E5FF', '#D933FF'];
 
     for (let i=0;i<prezzo.length;i++){
-        let coloreCasuale = colori[Math.floor(Math.random() * colori.length)];
-        prezzo[i].style.color = coloreCasuale;
+        let coloreCasuale = colori[Math.floor(Math.random() * colori.length)]
+        prezzo[i].style.color = coloreCasuale
     }
    
 }
